@@ -157,3 +157,27 @@ plt.figure(figsize=(8,6))
 plt.boxplot(g, labels=['Win', 'Draw', 'Loss'])
 plt.title('Liverpool Match Outcomes')
 plt.show()
+
+
+"""
+Ques. Is there a strong relationship between shot efficiency and the number of goals
+scored by Liverpool?
+"""
+
+sns.regplot(data=df, x="Shot_Efficiency", y="Goals")
+plt.xlabel("Shot Efficiency")
+plt.ylabel("Goals Scored")
+plt.title("Shot Efficiency vs Goals Scored")
+plt.show()
+
+
+"""
+Is there a strong relationship between shot efficiency and the number of goals
+scored by Liverpool?
+"""
+
+sns.regplot(data=df, x="Shot_Efficiency", y="Goals")
+plt.xlabel("Shot Efficiency")
+plt.ylabel("Goals Scored")
+plt.title("Shot Efficiency vs Goals Scored")
+plt.show()
