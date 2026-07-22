@@ -69,7 +69,47 @@ The project expects a CSV file named `Liverpool.csv` with columns such as:
 ### 5. Last 5 Match Momentum  
 - **Question**: Does recent momentum influence match outcomes?  
 - **Visualization**: Boxplot of `Last5_Win_Rate` grouped by result (Win/Draw/Loss).  
-- **Insight**: Shows whether form momentum predicts success.  
+- **Insight**: Shows whether form momentum predicts success.
+
+### 6. Fouls vs Match Result
+- Question: Does the number of fouls committed vary depending on match result?
+- **Visualization** Box plot of Fouls grouped by Result (Win / Draw / Loss).
+- Insight:Evaluates whether discipline or physicality differs based on the match outcome.
+
+## 7. Seasonality — Monthly Goals & Win Rate
+**Question:**:Does Liverpool experience seasonal fluctuations in scoring and win rate across different months?
+**Visualization:**:Dual-axis line chart showing:- Average Goals- Win Rate (%)-grouped by month.
+**Insight:**:Identifies seasonal peaks and dips in Liverpool's attacking performance and success rate.
+
+## 8. Season-over-Season Performance
+**Question:**:How has Liverpool's performance changed across different seasons in terms of goals, possession, and win percentage?
+**Visualization:**  Grouped bar chart comparing:
+- Average Goals
+- Average Possession
+- Win Percentage
+for each season.
+**Insight:**:Tracks long-term improvement or decline in team performance across seasons.
+
+## 9. Defensive Vulnerability
+**Question:**:Is there a relationship between opponent shots on target and goals conceded?
+**Visualization:**:Scatter plot with regression trend line between:
+- Opponent Shots on Target
+- Opponent Goals
+**Insight:**:Assesses Liverpool's defensive solidity under increasing attacking pressure.
+
+## 10. Correlation Between Key Match Statistics
+**Question:**:What relationships exist between Liverpool's key match statistics?
+**Visualization:**:Correlation heatmap including:
+- Goals
+- Possession
+- Shots
+- Shots on Target
+- Pass Accuracy
+- Corners
+- Crosses
+- Fouls
+- Last 5 Win Rate
+**Insight:**:Highlights which match statistics are most strongly associated with scoring and overall performance.
 
 ---
 
@@ -79,7 +119,12 @@ From the analysis, some clear insights emerge:
 - **Match Outcomes** → The pie chart shows a higher proportion of wins compared to draws and losses.  
 - **Shot Efficiency** → Positive correlation with goals scored, indicating efficient shooting is key.  
 - **Opponent Possession** → High-possession teams tend to suppress Liverpool’s scoring, with the toughest 3 highlighted.  
-- **Momentum Effect** → Higher last 5 match win rates are associated with more frequent wins.  
+- **Momentum Effect** → Higher last 5 match win rates are associated with more frequent wins.
+- **Discipline:** Foul counts remain relatively consistent across wins, draws, and losses, indicating that committing more fouls has little direct influence on match outcomes.
+- **Seasonality:** Goals scored and win rate display moderate seasonal variation, with a noticeable dip during **October–November** and stronger performances in the later months of the season.
+- **Season Trends:** The **2024 season** recorded both the highest average goals scored and the highest win percentage, while **2015** showed the weakest overall performance.
+- **Defensive Quality:** An increase in opponent shots on target generally leads to more goals conceded. However, the relationship is only moderate, suggesting that defensive organization and goalkeeping quality also significantly influence outcomes.
+- **Key Correlations:** **Shots on Target** exhibits the strongest positive relationship with goals scored, while **Possession** is positively correlated with **Pass Accuracy**, reinforcing Liverpool's possession-oriented playing style.  
 
 ---
 
