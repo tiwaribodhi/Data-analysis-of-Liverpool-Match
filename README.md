@@ -12,7 +12,12 @@ This project uses **Python (NumPy, Pandas, Matplotlib)** to analyze Liverpool’
    - [Match Outcome Breakdown](#2-match-outcome-breakdown)  
    - [Shot Efficiency vs Goals](#3-shot-efficiency-vs-goals)  
    - [Opponent Strength Effect](#4-opponent-strength-effect)  
-   - [Last 5 Match Momentum](#5-last-5-match-momentum)  
+   - [Last 5 Match Momentum](#5-last-5-match-momentum)
+   - [Fouls vs Match Result](#6-fouls-vs-match-result)  
+   - [Seasonality — Monthly Goals & Win Rate](#7-seasonality--monthly-goals--win-rate)  
+   - [Season-over-Season Performance](#8-season-over-season-performance)  
+   - [Defensive Vulnerability](#9-defensive-vulnerability)  
+   - [Correlation Between Key Match Statistics](#10-correlation-between-key-match-statistics)    
 4. [Results](#-results)  
 5. [Tech Used](#-tech-used)  
 
@@ -71,46 +76,30 @@ The project expects a CSV file named `Liverpool.csv` with columns such as:
 - **Visualization**: Boxplot of `Last5_Win_Rate` grouped by result (Win/Draw/Loss).  
 - **Insight**: Shows whether form momentum predicts success.
 
-### 6. Fouls vs Match Result
-- Question: Does the number of fouls committed vary depending on match result?
-- **Visualization** Box plot of Fouls grouped by Result (Win / Draw / Loss).
-- Insight:Evaluates whether discipline or physicality differs based on the match outcome.
+### 6. Fouls vs Match Result  
+- **Question**: Does the number of fouls committed vary depending on match result?  
+- **Visualization**: Box plot of **Fouls** grouped by **Result (Win / Draw / Loss)**.  
+- **Insight**: Evaluates whether discipline or physicality differs based on the match outcome.  
 
-## 7. Seasonality — Monthly Goals & Win Rate
-**Question:**:Does Liverpool experience seasonal fluctuations in scoring and win rate across different months?
-**Visualization:**:Dual-axis line chart showing:- Average Goals- Win Rate (%)-grouped by month.
-**Insight:**:Identifies seasonal peaks and dips in Liverpool's attacking performance and success rate.
+### 7. Seasonality — Monthly Goals & Win Rate  
+- **Question**: Does Liverpool experience seasonal fluctuations in scoring and win rate across different months?  
+- **Visualization**: Dual-axis line chart of **Average Goals** and **Win Rate (%)** grouped by month.  
+- **Insight**: Identifies seasonal peaks and dips in Liverpool's attacking performance and success rate.  
 
-## 8. Season-over-Season Performance
-**Question:**:How has Liverpool's performance changed across different seasons in terms of goals, possession, and win percentage?
-**Visualization:**  Grouped bar chart comparing:
-- Average Goals
-- Average Possession
-- Win Percentage
-for each season.
-**Insight:**:Tracks long-term improvement or decline in team performance across seasons.
+### 8. Season-over-Season Performance  
+- **Question**: How has Liverpool's performance changed across different seasons in terms of goals, possession, and win percentage?  
+- **Visualization**: Grouped bar chart comparing **Average Goals**, **Average Possession**, and **Win Percentage** for each season.  
+- **Insight**: Tracks long-term improvement or decline in team performance across seasons.  
 
-## 9. Defensive Vulnerability
-**Question:**:Is there a relationship between opponent shots on target and goals conceded?
-**Visualization:**:Scatter plot with regression trend line between:
-- Opponent Shots on Target
-- Opponent Goals
-**Insight:**:Assesses Liverpool's defensive solidity under increasing attacking pressure.
+### 9. Defensive Vulnerability  
+- **Question**: Is there a relationship between opponent shots on target and goals conceded?  
+- **Visualization**: Scatter plot with a regression trend line between **Opponent Shots on Target** and **Opponent Goals**.  
+- **Insight**: Assesses Liverpool's defensive solidity under increasing attacking pressure.  
 
-## 10. Correlation Between Key Match Statistics
-**Question:**:What relationships exist between Liverpool's key match statistics?
-**Visualization:**:Correlation heatmap including:
-- Goals
-- Possession
-- Shots
-- Shots on Target
-- Pass Accuracy
-- Corners
-- Crosses
-- Fouls
-- Last 5 Win Rate
-**Insight:**:Highlights which match statistics are most strongly associated with scoring and overall performance.
-
+### 10. Correlation Between Key Match Statistics  
+- **Question**: What relationships exist between Liverpool's key match statistics?  
+- **Visualization**: Correlation heatmap across **Goals**, **Possession**, **Shots**, **Shots on Target**, **Pass Accuracy**, **Corners**, **Crosses**, **Fouls**, and **Last 5 Win Rate**.  
+- **Insight**: Highlights which match statistics are most strongly associated with scoring and overall performance.
 ---
 
 ## 📊 Results  
